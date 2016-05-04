@@ -1,0 +1,32 @@
+name: maker-user
+version: 0.1.5
+layout:
+  sol_sources: "contracts"
+  build_dir: "build"
+dependencies:
+  dappsys: 0.1.2
+  dapple: 0.0.1
+environments:
+  morden:
+    objects:
+      MAR1:
+        class: MakerAssetRegistry
+        address: '0x877c5369c747d24d9023c88c1aed1724f1993efe'
+      dai_frontend:
+        class: DSTokenFrontend
+        address: '0xa6581e37bb19afddd5c11f1d4e5fb16b359eb9fc'
+      mkr_frontend:
+        class: DSTokenFrontend
+        address: '0xffb1c99b389ba527a9194b1606b3565a07da3eef'
+  live:
+    objects:
+      MAR1:
+        class: MakerAssetRegistry
+        address: '0xc6882fbffd309dc976dd6e4c79cc91e4c1482140'
+      dai_frontend:
+        class: DSTokenFrontend
+        address: '0xd3a84329b273d5b63002cf390a736c2f204b1aeb'
+      mkr_frontend:
+        class: DSTokenFrontend
+        address: '0xc66ea802717bfb9833400264dd12c2bceaa34a6d'
+

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf8>
+<link rel=stylesheet href=index.css>
+
+<h1>
+<img alt=Maker
+src=https://makerdao.com/splash/images/logo.svg>
+<span>Feedbase</span>
+</h1>
+
+<section>
+<p>This is a simple data feed contract which lets you
+publish small pieces of data that can be updated
+at any time.
+<p>Each time a feed is updated with a new value
+you may set an expiration date for that value.
+You are also able to put a price on your feed
+which must be paid by the first person who wants
+to read its value (for each update).
+</section>
+
+<section>
+<h2>Your data feeds
+<span>(select one to update)</span>
+</h2>
+<div id=feeds></div>
+</section>
+
+<div>
+<section>
+<form>
+<h2>New data feed</h2>
+<div>
+<table>
+<tr>
+<th><label>Initial value<br>(max 32 bytes)</label>
+<td>
+<!-- XXX 32 bytes != 32 characters -->
+<textarea class=input
+rows=2 cols=16 maxlength=32></textarea>
+<tr>
+<th><label>Expires (in UTC)</label>
+<td>
+<input class=input value="2016-03-08 16:03:31">
+<tr>
+<th><label>Price (in DAI)</label>
+<td>
+<input type=number class=input value=0>
+<tfoot>
+<tr>
+<th>
+<td>
+<button>Create feed</button>
+</table>
+</form>
+</section>
+</div>
+
+<script src=immutable-3.7.6.min.js></script>
+<script src=react-0.14.7.js></script>
+<script src=react-dom-0.14.7.js></script>
+<script src=index.js></script>

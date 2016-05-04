@@ -1,0 +1,3 @@
+var MAR = "0x877c5369c747d24d9023c88c1aed1724f1993efe"
+var feedbase1 = new FeedBase(MAR)
+export feedbase1

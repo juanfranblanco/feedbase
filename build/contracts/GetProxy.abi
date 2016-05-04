@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"target","type":"address"}],"name":"_target","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"id","type":"uint64"}],"name":"doGet","outputs":[{"name":"value","type":"bytes32"}],"type":"function"}]

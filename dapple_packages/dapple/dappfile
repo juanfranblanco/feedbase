@@ -1,0 +1,5 @@
+name: dapple
+version: 0.0.1
+layout:
+  sol_sources: contracts
+  build_dir: build
